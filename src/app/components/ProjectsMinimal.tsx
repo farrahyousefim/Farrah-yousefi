@@ -139,9 +139,42 @@ export function ProjectsGrid() {
         </div>
       </div>
 
-      {/* Horizontal row of cards */}
-      <div className="mx-auto max-w-[1200px] px-5 md:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      {/* Mobile: horizontal scroll / Desktop: 4-column grid */}
+      <div className="mx-auto max-w-[1200px] md:px-8">
+        {/* Mobile scroll */}
+        <div className="flex md:hidden gap-4 overflow-x-auto px-5 pb-4 snap-x snap-mandatory scrollbar-hide" style={{ WebkitOverflowScrolling: 'touch' }}>
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.7, delay: index * 0.1 }}
+              className="flex-shrink-0 w-[75vw] snap-start"
+            >
+              <Link to={project.link} className="block group">
+                <div className="relative overflow-hidden mb-4" style={{ aspectRatio: '3/4' }}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="font-['Lustria',serif] text-[11px] text-black/40 tracking-[0.05em] mb-1">
+                  {project.category}
+                </p>
+                <h3 className="font-['Lustria',serif] text-[15px] text-black leading-[1.3] uppercase tracking-[0.03em] mb-1">
+                  {project.title}
+                </h3>
+                <p className="font-['Lustria',serif] text-[13px] text-black/50 leading-[1.5]">
+                  {project.description}
+                </p>
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Desktop grid */}
+        <div className="hidden md:grid grid-cols-4 gap-6 px-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -150,27 +183,20 @@ export function ProjectsGrid() {
               transition={{ duration: 0.7, delay: index * 0.1 }}
             >
               <Link to={project.link} className="block group">
-                {/* Tall image */}
-                <div className="relative overflow-hidden mb-3 md:mb-5" style={{ aspectRatio: '3/4' }}>
+                <div className="relative overflow-hidden mb-5" style={{ aspectRatio: '3/4' }}>
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   />
                 </div>
-
-                {/* Category */}
-                <p className="font-['Lustria',serif] text-[11px] md:text-[12px] text-black/40 tracking-[0.05em] mb-1 md:mb-2">
+                <p className="font-['Lustria',serif] text-[12px] text-black/40 tracking-[0.05em] mb-2">
                   {project.category}
                 </p>
-
-                {/* Title */}
-                <h3 className="font-['Lustria',serif] text-[14px] md:text-[17px] text-black leading-[1.3] uppercase tracking-[0.03em] mb-1">
+                <h3 className="font-['Lustria',serif] text-[17px] text-black leading-[1.3] uppercase tracking-[0.03em] mb-1">
                   {project.title}
                 </h3>
-
-                {/* Description */}
-                <p className="font-['Lustria',serif] text-[12px] md:text-[14px] text-black/50 leading-[1.5]">
+                <p className="font-['Lustria',serif] text-[14px] text-black/50 leading-[1.5]">
                   {project.description}
                 </p>
               </Link>
