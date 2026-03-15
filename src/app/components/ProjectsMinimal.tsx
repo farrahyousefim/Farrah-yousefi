@@ -1,74 +1,179 @@
-import { motion } from 'motion/react';
-import { useInView } from 'motion/react';
-import { useRef } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import { AnimatePresence, motion, useInView } from 'motion/react';
 import { Link } from 'react-router';
-import Frame2608499 from '@/imports/Frame2608499-8-236';
+import ridePreferencesImg from '@/assets/snapp ride prefrences.png';
+import iaglImg from '@/assets/developer portal.png';
+import backstageImg from '@/assets/backstage-cover.png';
+import accessibilityImg from '@/assets/snapp accessibilty.png';
+
+const projects = [
+  {
+    title: 'Ride Preferences',
+    description: 'Creating a luxury and enjoyable ride experience for passengers and drivers.',
+    link: '/projects/ride-preferences',
+    image: ridePreferencesImg,
+    category: 'Oct 2022',
+  },
+  {
+    title: 'IAGL Developer Portal',
+    description: 'Improving partner onboarding from 4 months to 24 hours.',
+    link: '/projects/iagl-developer-portal',
+    image: iaglImg,
+    category: 'Nov 2025',
+  },
+  {
+    title: 'Backstage Home Page Redesign',
+    description: 'Redesigning IAGL Backstage to generate value for users and business.',
+    link: '/projects/backstage-home-redesign',
+    image: backstageImg,
+    category: 'Jan 2026',
+  },
+  {
+    title: 'Ride Accessibility',
+    description: 'Making Snapp ride-hailing app more accessible for both passengers and drivers.',
+    link: '/projects/ride-accessibility',
+    image: accessibilityImg,
+    category: 'May 2022',
+  },
+];
 
 export function ProjectsMinimal() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [current, setCurrent] = useState(0);
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % projects.length);
+  }, []);
 
-  const projects = [
-    {
-      title: "IAGL Developer Portal",
-      description: "Improving partner onboarding from 4 month to 24h!",
-      imageOnRight: true
-    }
-  ];
+  useEffect(() => {
+    const timer = setInterval(next, 4000);
+    return () => clearInterval(timer);
+  }, [next]);
+
+  const project = projects[current];
 
   return (
-    <section id="projects" ref={ref} className="pb-20 bg-white">
-      <div className="container mx-auto px-6">
-        {/* Section divider with gap */}
-        <div className="flex items-center gap-4 mb-16">
-          <div className="flex-1 h-[1px] bg-gray-400 opacity-55" />
-          <h2 className="text-4xl font-['Lustria',serif] text-black px-4">Projects</h2>
-          <div className="flex-1 h-[1px] bg-gray-400 opacity-55" />
-        </div>
+    <section
+      id="projects"
+      className="relative w-full"
+      style={{ height: '100vh' }}
+    >
+      {/* Full-screen background image */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={current}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8 }}
+          className="absolute inset-0"
+        >
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+          {/* Gradient overlay — bottom */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+        </motion.div>
+      </AnimatePresence>
 
-        <div className="space-y-32 max-w-6xl mx-auto">
+      {/* Text overlay — bottom left */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 px-12 pb-14">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Link to={project.link} className="block group">
+              <h2 className="font-['Lustria',serif] text-[15px] tracking-[0.12em] uppercase text-white/60 mb-3">
+                {project.category}
+              </h2>
+              <h3 className="font-['Lustria',serif] text-[42px] text-white leading-[1.15] mb-3 max-w-[700px]">
+                {project.title}
+              </h3>
+              <p className="font-['Lustria',serif] text-[22px] text-white/80 leading-[1.35] max-w-[700px]">
+                {project.description}
+              </p>
+            </Link>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* Slide indicators — bottom right */}
+      <div className="absolute bottom-14 right-12 z-10 flex items-center gap-3">
+        {projects.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === current ? 'bg-white w-6' : 'bg-white/40'
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Counter — top right */}
+      <div className="absolute top-8 right-12 z-10">
+        <span className="font-['Lustria',serif] text-[13px] tracking-[0.1em] text-white/50">
+          {current + 1} / {projects.length}
+        </span>
+      </div>
+    </section>
+  );
+}
+
+export function ProjectsGrid() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-80px' });
+
+  return (
+    <section ref={ref} className="bg-[#DCDED4] py-20">
+      {/* Header row */}
+      <div className="mx-auto max-w-[1200px] px-8 mb-6">
+        <div className="border-b border-black/15 pb-4">
+          <h2 className="font-['Lustria',serif] text-[32px] text-black leading-[1.2]">
+            All Projects
+          </h2>
+        </div>
+      </div>
+
+      {/* Horizontal row of cards */}
+      <div className="mx-auto max-w-[1200px] px-8">
+        <div className="grid grid-cols-4 gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="relative"
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.7, delay: index * 0.1 }}
             >
-              <div className="flex items-center gap-8">
-                {/* Black info box */}
-                <div className="relative bg-black text-white p-16 w-[560px] h-[422px] flex flex-col justify-between z-10">
-                  {/* Double circle icon */}
-                  <div className="absolute top-16 left-16 flex items-center">
-                    <div className="w-[23px] h-[23px] bg-white rounded-full" />
-                    <div className="w-[23px] h-[23px] border border-white rounded-full -ml-3" />
-                  </div>
-
-                  <div className="mt-16">
-                    <h3 className="text-4xl font-['Lustria',serif] leading-normal whitespace-pre-wrap mb-4">
-                      {project.title}
-                    </h3>
-                    <p className="text-base font-['Lustria',serif] leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-
-                  <Link to="/projects/iagl-developer-portal" className="flex items-center gap-1 text-base font-['Lustria',serif] hover:opacity-70 transition-opacity self-start">
-                    View Project
-                    <ChevronRight className="w-5 h-5" />
-                  </Link>
-                </div>
-
-                {/* Project image */}
-                <div className="relative w-[680px] h-[383px] -ml-24">
-                  <Frame2608499
-                    className="w-full h-full object-cover"
+              <Link to={project.link} className="block group">
+                {/* Tall image */}
+                <div className="relative overflow-hidden mb-5" style={{ aspectRatio: '3/4' }}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   />
-                  {/* Decorative circle */}
-                  <div className="absolute -right-12 bottom-8 w-[60px] h-[60px] bg-black rounded-full" />
                 </div>
-              </div>
+
+                {/* Category */}
+                <p className="font-['Lustria',serif] text-[12px] text-black/40 tracking-[0.05em] mb-2">
+                  {project.category}
+                </p>
+
+                {/* Title */}
+                <h3 className="font-['Lustria',serif] text-[17px] text-black leading-[1.3] uppercase tracking-[0.03em] mb-1">
+                  {project.title}
+                </h3>
+
+                {/* Description */}
+                <p className="font-['Lustria',serif] text-[14px] text-black/50 leading-[1.5]">
+                  {project.description}
+                </p>
+              </Link>
             </motion.div>
           ))}
         </div>

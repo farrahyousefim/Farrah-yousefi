@@ -1,1 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+
+@font-face {
+  font-family: 'Lovelyn';
+  src: url('../fonts/Lovelyn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

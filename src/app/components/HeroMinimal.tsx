@@ -1,55 +1,56 @@
 import { motion } from 'motion/react';
-import heroImage from '@/assets/d509ae547dba052d2a2bc1109d1abea829fdc06e.png';
+import { Link } from 'react-router';
+import heroImage from '@/assets/Farrah-hero.png';
 
 export function HeroMinimal() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-white pt-20">
-      <div className="container mx-auto px-6">
-        <div className="relative w-[729px] h-[526px] ml-20">
-          {/* Left vertical black bar */}
-          <div className="absolute bg-[#0c0e10] h-[379px] w-[67px] left-[-34px] top-[112px]" />
-          
-          {/* Large decorative circle */}
-          <div className="absolute left-[334.5px] top-[213px] w-[60px] h-[60px]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 60 60">
-              <circle cx="30" cy="30" fill="black" r="30" />
-            </svg>
-          </div>
+    <section className="bg-[#fffcfb] pt-[72px]">
+      <div className="mx-auto max-w-[1200px] px-8">
+        {/* Name — large, centered, tight top padding */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          className="font-['Lustria',serif] text-[38px] text-black tracking-[0.08em] uppercase text-center pt-8 mb-2"
+        >
+          Farrah Yousefi
+        </motion.h1>
 
-          {/* Main image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="absolute inset-0 w-[394.5px] h-[526px]"
-          >
-            <img
-              src={heroImage}
-              alt="Portfolio"
-              className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-            />
-          </motion.div>
+        {/* Tagline — centered, editorial, tight gap to image */}
+        <motion.p
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
+          className="font-['Lustria',serif] text-[38px] text-black leading-[1.15] text-center max-w-[900px] mx-auto mb-8"
+        >
+          Product designer. Researcher. Strategist: The one who brings clarity to chaos and good energy to every room.
+        </motion.p>
 
-          {/* Black box with text */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute bg-black left-[335px] top-[286px] w-[372px] px-[24px] py-[16px]"
-          >
-            <div className="flex flex-col font-['Lustria',serif] text-[36px] text-white leading-[normal] whitespace-pre-wrap">
-              <p className="relative shrink-0 w-full">Farrah Yousefi</p>
-              <p className="relative shrink-0 w-full">Product Designer</p>
+        {/* Portrait — centered, contained */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2, delay: 0.4 }}
+          className="flex flex-col items-center pb-[60px]"
+        >
+          <Link to="/about" className="block relative w-[220px] group cursor-pointer">
+            <div className="relative overflow-hidden w-[220px]" style={{ height: 290 }}>
+              <img
+                src={heroImage}
+                alt="Farrah Yousefi"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: '50% 25%' }}
+              />
+              {/* Dark hover overlay */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-500 flex items-center justify-center">
+                <span className="font-['Lustria',serif] text-[15px] tracking-[0.12em] uppercase text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  About Me
+                </span>
+              </div>
             </div>
-            
-            {/* Small decorative circle */}
-            <div className="absolute left-[328px] top-[80px] w-[17px] h-[17px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 17 17">
-                <circle cx="8.5" cy="8.5" fill="white" r="8.5" />
-              </svg>
-            </div>
-          </motion.div>
-        </div>
+          </Link>
+
+        </motion.div>
       </div>
     </section>
   );
