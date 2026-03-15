@@ -1,4 +1,4 @@
-import flowerMark from '@/assets/flower-mark.png';
+import logo from '@/assets/Farrah-web-logo.png';
 
 export function Footer() {
   const links = [
@@ -11,10 +11,8 @@ export function Footer() {
     <footer className="bg-[#fffcfb] border-t border-black/10">
       <div className="mx-auto max-w-[1200px] px-6 md:px-8 py-10 md:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Flower mark */}
-          <div className="w-[32px] h-[32px] rounded-full bg-[#943d2f] flex items-center justify-center">
-            <img src={flowerMark} alt="" className="w-[18px] h-[18px] object-contain brightness-0 invert" />
-          </div>
+          {/* Logo */}
+          <img src={logo} alt="Farrah Yousefi" className="w-[32px] h-[32px] object-contain" />
 
           {/* Links */}
           <div className="flex items-center gap-6 md:gap-10">
