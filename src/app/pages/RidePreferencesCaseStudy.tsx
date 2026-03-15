@@ -29,7 +29,7 @@ export function RidePreferencesCaseStudy() {
       <NavigationMinimal />
 
       {/* Back button */}
-      <div className="container mx-auto px-6 pt-24">
+      <div className="container mx-auto px-4 md:px-6 pt-20 md:pt-24">
         <Link to="/" className="inline-flex items-center gap-2 text-black hover:opacity-70 transition-opacity font-['Lustria',serif]">
           <ArrowLeft className="w-5 h-5" />
           Back to Portfolio
@@ -37,7 +37,7 @@ export function RidePreferencesCaseStudy() {
       </div>
 
       {/* Cover */}
-      <section className="container mx-auto px-6 mt-8">
+      <section className="container mx-auto px-4 md:px-6 mt-8">
         <div className="max-w-5xl mx-auto">
           <img
             src={rpCover}
@@ -48,12 +48,12 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Project Overview */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-5xl font-['Lustria',serif] text-black mb-8">
+          <h1 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Project Overview
           </h1>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-12">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 md:mb-12">
             Snapp is a super app with more than <strong className="font-bold">52 million</strong> users
             and <strong className="font-bold">2.8 million</strong> rides a day for its ride hailing service!
             Such many users have large number of different needs. We decided to let the users{' '}
@@ -63,22 +63,22 @@ export function RidePreferencesCaseStudy() {
             in the passenger and driver android and PWA applications.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">MY ROLE</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Responsible for design, competitor analysis, and collaborating in user interviews.
               </p>
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">THE TEAM</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 1 designer, 2 product managers, 2 UX researchers, 2 UX writers and 7+ engineers.
               </p>
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">TIMELINE</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Jun 22 – Oct 2022
               </p>
             </div>
@@ -87,22 +87,22 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Got Interested */}
-      <section className="container mx-auto px-6 py-12">
+      <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[32px] font-['Lustria',serif] text-black leading-tight">
+          <h2 className="text-[24px] md:text-[32px] font-['Lustria',serif] text-black leading-tight">
             Got interested? You can read the details down here! ⬇️
           </h2>
         </div>
       </section>
 
       {/* Problem Statement */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Problem statement
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               Around *% of social reports issues in each month were about ride preferences.
               Subjects like music in the car, carrying luggage, wheelchair, transporting pets, smoking etc.{' '}
               <strong className="font-bold">How might we let users add some personalized changes to their ride?</strong>
@@ -111,7 +111,7 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
                 What was the problem?
               </h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Passengers sometimes find it hard to talk to drivers about their preferences,
                 or they might have unmet needs that cause them or the drivers to cancel the ride.
                 (like wheelchair or help)
@@ -129,13 +129,13 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* The Goal */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               The goal
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               This project was mainly about enhancing the in-app experience for our users and adding
               a sense of <strong className="font-bold">coolness</strong> and{' '}
               <strong className="font-bold">luxury</strong> to our app. But how can we know if we have
@@ -145,7 +145,7 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
                 Success metrics
               </h3>
-              <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+              <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
                 <li>Increase usage of Snapp! Plus by X%</li>
                 <li>Decreasing cancelation rate after accept for both passengers and drivers.</li>
                 <li>Decreasing cancelation rate after arrival for both passengers and drivers.</li>
@@ -164,13 +164,13 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Digging Deeper */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Digging deeper into user's ride preferences
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               By social reports we only get notified that people have some special requests.
               We wanted to <strong className="font-bold">evaluate the current ride options</strong> that
               we have in Snapp and{' '}
@@ -182,7 +182,7 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
                 What did we want to find out?
               </h3>
-              <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+              <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
                 <li>Ride options usage and familiarity</li>
                 <li>Ride options passengers are most willing to pay for</li>
                 <li>Ride options passengers need the most</li>
@@ -203,19 +203,19 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Online Survey Results */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Online survey results
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Snapp EcoPlus has a <strong className="font-bold">low awareness</strong> and <strong className="font-bold">usage</strong> in comparison to other ride options.</li>
               <li>There is a <strong className="font-bold">false knowledge</strong> about Ecoplus service type.</li>
               <li><strong className="font-bold">"Driver Help"</strong>, <strong className="font-bold">"AC/Heater"</strong> and <strong className="font-bold">"Carrying Load"</strong> are the main options that passengers tend to pay for.</li>
               <li><strong className="font-bold">"Playing Desired Music"</strong> and <strong className="font-bold">"Silent Mode"</strong> are the most needed options in respondents' rides.</li>
             </ul>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li><strong className="font-bold">"Carrying Load"</strong>, <strong className="font-bold">"More Than 3 Passengers"</strong> and <strong className="font-bold">"Driver Help"</strong> have the highest ride share among ride items.</li>
               <li>Among these items <strong className="font-bold">"More Than 3 Passengers"</strong> and <strong className="font-bold">"Having Pet"</strong> have the highest share of cancelation.</li>
               <li>
@@ -234,12 +234,12 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Listing First Ride Preferences */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
             Listing the first ride preferences options
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 max-w-3xl mx-auto">
             With the knowledge we got from the social report, online surveys, and the meetings
             we had with our team, we listed the ride preferences that we could technically provide
             in Snapp and decided on where and how they were gonna be placed in the ride flow.
@@ -253,13 +253,13 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Ideating the Details */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Ideating the details of ride options
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               We have found out in the online surveys that Snapp Ecoplus{' '}
               <strong className="font-bold">usage and familiarity</strong> are low and as Ecoplus
               has newer cars, top-rated drivers, and better car models, there are options that we
@@ -267,7 +267,7 @@ export function RidePreferencesCaseStudy() {
               devote those items to Snapp Ecoplus and the rest will be applied for all service types.
             </p>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Unlike a new service type idea, adding some options to Ecoplus service type, would
                 give us the opportunity to test with the smaller group of plus users first and in
                 case of success, we could extend it to all service types.
@@ -285,18 +285,18 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Comparing Competitors */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
             Comparing competitors!
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-12">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 md:mb-12">
             Before going further in the process, it was time to take a look at what our competitors
             have done and get inspiration. I was focusing on options they had included and for which
             service types they were available from Asia to US market.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8 md:mb-12">
             {/* Uber */}
             <div className="flex flex-col items-start gap-4">
               <img
@@ -306,14 +306,14 @@ export function RidePreferencesCaseStudy() {
               />
               <div>
                 <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Features</h4>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 mb-2">LUX black service type</p>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 mb-2">LUX black service type</p>
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
                   <li>Temperature</li>
                   <li>Quiet ride</li>
                   <li>Help with the bags</li>
                 </ul>
                 <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Insight</h4>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1">
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1">
                   <li>Creates awareness of ride preferences by an introductory pop up.</li>
                   <li>Ride preferences options come right after the user chooses the service type.</li>
                 </ul>
@@ -329,14 +329,14 @@ export function RidePreferencesCaseStudy() {
               />
               <div>
                 <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Features</h4>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 mb-2">Comfort & black service type</p>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 mb-2">Comfort & black service type</p>
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
                   <li>Conversation</li>
                   <li>Temperature</li>
                   <li>Bags (Only for black)</li>
                 </ul>
                 <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Insight</h4>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700">
                   Not much awareness towards the ride preferences user can set it after selecting the
                   pick-up destination so she might not know that its a benefit of choosing comfort/black service type.
                 </p>
@@ -353,14 +353,14 @@ export function RidePreferencesCaseStudy() {
                 className="w-full rounded-lg mb-4"
               />
               <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Features</h4>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 mb-2">LUX service type</p>
-              <ul className="text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 mb-2">LUX service type</p>
+              <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
                 <li>Quiet ride</li>
                 <li>Extra hand</li>
                 <li>Custom request (note)</li>
               </ul>
               <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Insight</h4>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700">
                 Users can set the options as default for their future rides, which seems really helpful.
               </p>
             </div>
@@ -373,8 +373,8 @@ export function RidePreferencesCaseStudy() {
                 className="w-full rounded-lg mb-4"
               />
               <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Features</h4>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 mb-2">Comfort+ & comfort service type</p>
-              <ul className="text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 mb-2">Comfort+ & comfort service type</p>
+              <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
                 <li>Pet transportation</li>
                 <li>Ski or snow board</li>
                 <li>Child safety seat</li>
@@ -382,7 +382,7 @@ export function RidePreferencesCaseStudy() {
                 <li>Quiet ride</li>
               </ul>
               <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Insight</h4>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700">
                 Yandex has the most variety of different ride options for each service type and the tab
                 style made it easier to choose the ride options.
               </p>
@@ -396,8 +396,8 @@ export function RidePreferencesCaseStudy() {
                 className="w-full rounded-lg mb-4"
               />
               <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Features</h4>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 mb-2">LUX service type</p>
-              <ul className="text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 mb-2">LUX service type</p>
+              <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 list-disc list-inside space-y-1 mb-4">
                 <li>Child seat</li>
                 <li>Luggage</li>
                 <li>Pet</li>
@@ -407,7 +407,7 @@ export function RidePreferencesCaseStudy() {
                 <li>Tip ...</li>
               </ul>
               <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-1">Insight</h4>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700">
                 It was not clear what comfort means in Maxim, the ride options with all their variety
                 could be set for all service types.
               </p>
@@ -417,20 +417,20 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Designing First Ideas */}
-      <section className="bg-black text-white py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-black text-white py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-[40px] font-['Lustria',serif] mb-12">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] mb-8 md:mb-12">
               Designing the first ideas
             </h2>
 
             {/* Ecoplus Introduction */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-10 md:mb-16">
               <div>
                 <h3 className="text-[13px] font-['Lustria',serif] uppercase tracking-wider mb-4">
                   Snapp Ecoplus introduction
                 </h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed">
                   The first time the user selects a service type there is a page with little info,
                   and it's only showed to the user once. For increasing the{' '}
                   <strong className="text-white font-bold">familiarity</strong> and{' '}
@@ -447,14 +447,14 @@ export function RidePreferencesCaseStudy() {
             </div>
 
             {/* Service Type Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-10 md:mb-16">
               <img
                 src={rpServiceInfo}
                 alt="Service type info screens"
                 className="w-full rounded-lg"
               />
               <div>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed">
                   To increase the familiarity of service types we needed a place that users can always
                   go to and read. It would also give us the flexibility to change or add any needed info
                   in future. The number of people each service type could include is also mentioned there.
@@ -465,26 +465,26 @@ export function RidePreferencesCaseStudy() {
             {/* Ride Preferences Options */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div>
-                <h3 className="text-[24px] font-['Lustria',serif] mb-6">
+                <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] mb-6">
                   Ride preferences options
                 </h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed mb-4">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed mb-4">
                   We decided to have the following options for Ecoplus service type:
                 </p>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-300 list-disc list-inside space-y-1 mb-6">
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 list-disc list-inside space-y-1 mb-6">
                   <li>Silent mode</li>
                   <li>Music</li>
                   <li>Temperature</li>
                 </ul>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed mb-4">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed mb-4">
                   and the rest for all service types:
                 </p>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-300 list-disc list-inside space-y-1 mb-6">
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 list-disc list-inside space-y-1 mb-6">
                   <li>Wheelchair</li>
                   <li>Luggage</li>
                   <li>Need assistant</li>
                 </ul>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-300 leading-relaxed">
                   After talking to commercial team, we decided to not consider{' '}
                   <strong className="text-white font-bold">pets</strong> and{' '}
                   <strong className="text-white font-bold">cigarettes</strong> for now.
@@ -503,13 +503,13 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Brainstorming */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-50 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
               Brainstorming on our first iteration
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4 max-w-3xl mx-auto">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4 max-w-3xl mx-auto">
               With our first ideas brought to life, I wanted to involve the entire stakeholders
               in the early stage concepts because creating such a feature required many minds.
               I presented the design and we discussed how all these options would work, the corner
@@ -529,9 +529,9 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Key Findings of Meetings */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Key finding of the meetings
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -544,12 +544,12 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
                 When to show the options to drivers?
               </h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
                 <strong className="font-bold">First idea:</strong> "Showing the ride options after
                 the driver accepted the ride and not charging the driver for cancelation". Acceptance
                 rate will stay steady but the cancelation rate might increase.
               </p>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 <strong className="font-bold">Second idea:</strong> "Showing the ride option after the
                 driver accepted the ride and charging the driver for cancelation." Acceptance rate will
                 stay the same and the cancelation rate won't increase, however, if after the roll out
@@ -561,17 +561,17 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Challenges: Music */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
               Challenges with the music option
             </h3>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
               Music had been asked a lot by users and can also add luxury and get attention in PR,
               but there were serious challenges like:
             </p>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-3">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-3">
               <li>
                 At first, we had it as just an option to turn off and on, but what if the passenger
                 doesn't like the music?
@@ -595,17 +595,17 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Challenge Cards */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="bg-gray-50 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div className="bg-white border border-gray-200 rounded-lg p-8">
               <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
                 Guaranteeing ride preferences
               </h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
                 We needed to think of how to encourage drivers to accommodate passengers' preferences.
               </p>
-              <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+              <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
                 <li>We will inform passengers that the driver will be notified and <strong className="font-bold">may be</strong> able to accommodate the preferences.</li>
                 <li>In the driver app accommodating to the preferences is a must.</li>
                 <li>To evaluate the drivers, we add a new item in the <strong className="font-bold">ratings</strong> for ride preferences and encourage passengers to rate.</li>
@@ -616,7 +616,7 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
                 Is silent ride appropriate for Iran's culture?
               </h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 We were not sure if this option means the driver should not talk or the music should
                 be off too? And how would the drivers in Iran think if we shush them beforehand? Or,
                 if the option is off, means that the passenger prefers to talk? Which is still not ok
@@ -628,7 +628,7 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
                 AC is a rule in all Snapp service types but an emphasis in Ecoplus
               </h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Turning the AC on is a rule for all Snapp cars and putting it in Ecoplus would give
                 the false signal that only Ecoplus cars have to obey this rule, so we needed to display
                 it in a way that users know this option is just for assuring that the cab they hail
@@ -640,7 +640,7 @@ export function RidePreferencesCaseStudy() {
               <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
                 I need help needs to be Clarified
               </h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 This was our only option that would add an extra charge to the ride fare. It was
                 really hard to specify how much help it means, is it helping a disabled passenger
                 to sit in the car? or it's help with the luggage or shopping bags? these items would
@@ -652,13 +652,13 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* In-depth Interviews */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Getting more insights by in-depth interviews
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               We had many challenges and many questions that only the users themselves could answer,
               so our research team and I did some in-depth interviews with{' '}
               <strong className="font-bold">5 Eco drivers</strong> and{' '}
@@ -667,7 +667,7 @@ export function RidePreferencesCaseStudy() {
             <h4 className="text-[13px] font-['Lustria',serif] text-black uppercase tracking-wider mb-3">
               Objectives
             </h4>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
               <li>Discover what users say, think, do, & feel regarding ride preferences items.</li>
               <li>How users work with ride preferences & their problems.</li>
               <li>Explore alternative future improvements to ride preferences</li>
@@ -683,16 +683,16 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Interview Key Findings */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-50 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
               Interviews key findings
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               <div className="bg-white border border-gray-200 rounded-lg p-8">
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">Music</h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   Drivers divide music genres into normal (pop), happy, mellow, Persian folk, & extreme music.
                   They may not know how to treat this feature, and it is confusing for them. They think it is
                   a disturbance and is not necessary. They don't mind following passengers' requests.
@@ -701,7 +701,7 @@ export function RidePreferencesCaseStudy() {
 
               <div className="bg-white border border-gray-200 rounded-lg p-8">
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">Wheelchair</h3>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
                   <li>They might do it for morality.</li>
                   <li>It takes so much of their time.</li>
                   <li>Wheelchair makes their car dirty.</li>
@@ -711,7 +711,7 @@ export function RidePreferencesCaseStudy() {
 
               <div className="bg-white border border-gray-200 rounded-lg p-8">
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">AC</h3>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
                   <li>Promoting content on why using AC is good for the car via: Online courses, Interview with repairmen.</li>
                   <li>Providing loans which cover AC cost</li>
                 </ul>
@@ -719,7 +719,7 @@ export function RidePreferencesCaseStudy() {
 
               <div className="bg-white border border-gray-200 rounded-lg p-8">
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">Silent ride</h3>
-                <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
+                <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2">
                   <li>It may be extremely insulting to drivers.</li>
                   <li>Almost all of the drivers think it is unnecessary.</li>
                 </ul>
@@ -730,9 +730,9 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Final Design Decisions */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Final design decisions for the MVP
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -744,7 +744,7 @@ export function RidePreferencesCaseStudy() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-3">Music</h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   Music for our MVP version was kept as simple as possible just to select if they want
                   the music in the car or not, and the rest would be dealt during the ride by passengers
                   and drivers. For future we are gonna have a music provider like Snapp radio or give our
@@ -753,7 +753,7 @@ export function RidePreferencesCaseStudy() {
               </div>
               <div>
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-3">Temperature</h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   Turning the AC on is a rule for all Snapp service types but putting it here would
                   create the misunderstanding that it is only for Ecoplus cars, so we tried to show
                   the users that it's just an extra assurance for those who want AC and don't wanna
@@ -762,7 +762,7 @@ export function RidePreferencesCaseStudy() {
               </div>
               <div>
                 <h3 className="text-[20px] font-['Lustria',serif] text-black mb-3">Silent ride</h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   The most sensitive item due to driver's interviews and most asked from users, we
                   decided to keep it but handle it in writing in a way that it's the least offensive
                   for drivers.
@@ -774,11 +774,11 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Rating */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">Rating</h3>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
               To monitor if the drivers accommodate passengers' preferences, we added an item in
               rating reasons, rest of our work for showing the users that they are being cared about
               and being monitored had postponed for the in-app navigation feature to cover.
@@ -793,18 +793,18 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Options Not Included */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-100 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
               Options not included in MVP version
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
               <div>
                 <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
                   I need help
                 </h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   Due to the unclearness and dependency to pricing we decided to not have it for the MVP version.
                 </p>
               </div>
@@ -812,7 +812,7 @@ export function RidePreferencesCaseStudy() {
                 <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
                   Service type description
                 </h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   We decided to set a whole new task for this so we didn't have it for our MVP version.
                 </p>
               </div>
@@ -820,7 +820,7 @@ export function RidePreferencesCaseStudy() {
                 <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
                   Wheelchair
                 </h3>
-                <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+                <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                   The wheelchair would decrease the acceptance rate, but after the second phase of our
                   accessibility feature in which drivers won't pay commission for these rides, we will add the wheelchair.
                 </p>
@@ -831,16 +831,16 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Impact */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
             The impact
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             The roll-out is quite new for a month for 20% of our android users, we measured our
             metrics and we already got interesting results:
           </p>
-          <div className="bg-black text-white rounded-lg p-10 text-left space-y-4 max-w-2xl mx-auto">
+          <div className="bg-black text-white rounded-lg p-6 md:p-10 text-left space-y-4 max-w-2xl mx-auto">
             <p className="text-[20px] font-['Lustria',serif] leading-relaxed">
               ⬆️ Snapp Ecoplus usage increased by 17%
             </p>
@@ -861,13 +861,13 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Reflection */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Reflection
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed space-y-6">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed space-y-6">
               <li>
                 <strong className="font-bold">Collaborate with other teams and verticals.</strong>{' '}
                 This project was unique in its dependency on other verticals; each item was related to
@@ -908,12 +908,12 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Next Steps */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
             Next Steps
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
             We have so much for the future of this project, changes in each service type description,
             adding more options and improving the current ones, and encouraging passengers to rate and
             use ride options.
@@ -922,7 +922,7 @@ export function RidePreferencesCaseStudy() {
       </section>
 
       {/* Back to Top */}
-      <section className="container mx-auto px-6 py-12">
+      <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-5xl mx-auto text-center">
           <Link
             to="/"

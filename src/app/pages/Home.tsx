@@ -9,7 +9,7 @@ export function Home() {
       <NavigationMinimal />
       <HeroMinimal />
       <ProjectsMinimal />
-      <div className="h-[60px] bg-[#fffcfb]" />
+      <div className="h-[30px] md:h-[60px] bg-[#fffcfb]" />
       <ProjectsGrid />
       <Footer />
     </div>

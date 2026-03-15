@@ -20,7 +20,7 @@ export function RideAccessibilityCaseStudy() {
       <NavigationMinimal />
 
       {/* Back button */}
-      <div className="container mx-auto px-6 pt-24">
+      <div className="container mx-auto px-4 md:px-6 pt-20 md:pt-24">
         <Link to="/" className="inline-flex items-center gap-2 text-black hover:opacity-70 transition-opacity font-['Lustria',serif]">
           <ArrowLeft className="w-5 h-5" />
           Back to Portfolio
@@ -28,7 +28,7 @@ export function RideAccessibilityCaseStudy() {
       </div>
 
       {/* Cover */}
-      <section className="container mx-auto px-6 mt-8">
+      <section className="container mx-auto px-4 md:px-6 mt-8">
         <div className="max-w-5xl mx-auto">
           <img
             src={arCoverFull}
@@ -39,12 +39,12 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Project Overview */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-5xl font-['Lustria',serif] text-black mb-8">
+          <h1 className="text-[28px] md:text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Project Overview
           </h1>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-12">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 md:mb-12">
             Snapp is a super app with more than <strong className="font-bold">52 million</strong> users
             and <strong className="font-bold">2.8 million</strong> rides a day for its ride hailing service!
             It is one of our most important duties to make it as accessible as possible for everyone, in this
@@ -53,22 +53,22 @@ export function RideAccessibilityCaseStudy() {
             based on these problems.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">MY ROLE</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Responsible for design, competitor analysis, and collaborating in user interviews.
               </p>
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">THE TEAM</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 2 designers, 2 product managers, 1 UX researcher, 1 UX writer and 10+ engineers.
               </p>
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">TIMELINE</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 May 2022 - Oct 2022
               </p>
             </div>
@@ -77,21 +77,21 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Got Interested */}
-      <section className="container mx-auto px-6 py-12">
+      <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[32px] font-['Lustria',serif] text-black leading-tight">
+          <h2 className="text-[24px] md:text-[32px] font-['Lustria',serif] text-black leading-tight">
             Got interested? You can read the details of what we did down here! ⬇️
           </h2>
         </div>
       </section>
 
       {/* The Opportunity */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
             The opportunity
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             We wanted to help all Snapp users with disability to use Snapp easier, first we checked the context
             of our current situation: (Because of NDA numbers can't be shown)
           </p>
@@ -137,17 +137,17 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* The Problems */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             The Problems
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Passengers had no clue if the driver that had accepted their ride was disabled.</li>
               <li>If passengers needed any help from drivers and they were connected to a mobility-impaired driver, they would cancel the ride.</li>
             </ul>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Passengers would call the drivers, but if they had hearing impairments that would fail.</li>
               <li>The mobility impairment car plate was not known for most people.</li>
               <li>When using screen readers, the app had some problems functioning properly.</li>
@@ -157,20 +157,20 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Our Goal */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
             Our goal
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             To be able to measure the success of our design, we set some metrics:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Increasing the number of messages in chat with hearing-impaired drivers</li>
               <li>Enable 1% of Snapp users who are blind to be able to call a cab natively through screen readers (Android Talkback or iOS Voiceover).</li>
             </ul>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Increasing the number of drivers with disability.</li>
               <li>Reduce post-acceptance cancelation for passengers with wheelchairs by 5%.</li>
               <li>Drivers and passengers with hearing impairments will not get calls and their rides will not get canceled because of this problem.</li>
@@ -180,13 +180,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Getting to know drivers with disabilities */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Getting to know drivers with disabilities
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               First, in the Q4 quarter of 2020, a research was conducted on deaf and hard-of-hearing
               drivers <strong className="font-bold">to calculate the effect of informing passengers about
               the disability of drivers on ride cancelation metric.</strong>
@@ -197,7 +197,7 @@ export function RideAccessibilityCaseStudy() {
             <h3 className="text-[13px] font-['Lustria',serif] text-black mb-4 uppercase tracking-wider">
               Points from the interview with drivers with hearing impairments:
             </h3>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>As they can not understand the writing like regular people, we can't use a survey method.</li>
               <li>Passenger calls drivers with hearing impairments and they can't respond or send SMS or message in app, and passenger don't realize and after some calls cancel the ride.</li>
               <li>During the ride passengers can't communicate with the driver (specially in first impressions and greetings!)</li>
@@ -208,13 +208,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Learning about Snapp users with disabilities */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Learning about Snapp users with disabilities
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               One of our big challenges was that in Snapp we didn't have added disability types in profile;
               So we do not have any data to recognize our users who have disabilities. To solve this problem
               we had to look for available resources and we did the discovery through these mediums:
@@ -242,12 +242,12 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* What did we find out */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-100 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
               <div>
-                <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+                <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
                   What did we find out from all the discovery?
                 </h2>
                 <img src={arIllustration2} alt="Discovery findings illustration" className="w-[385px]" />
@@ -292,15 +292,15 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Ideating solutions - Mobility */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Ideating solutions based on our findings
           </h2>
           <h3 className="text-[20px] font-['Lustria',serif] text-black mb-6">
             🦽 Mobility impairment
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 md:mb-16">
             {[
               "After ride acceptance, a badge on your profile will inform the not-deaf side of the disability issue.",
               "Letting drivers and passengers mark themselves as a person with a disability in their profile.",
@@ -321,7 +321,7 @@ export function RideAccessibilityCaseStudy() {
           <h3 className="text-[20px] font-['Lustria',serif] text-blue-600 mb-6">
             🦻🏼 Hearing impairment
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 md:mb-16">
             {[
               "Letting users mark themselves as Deaf/HOH in profile.",
               "For this group of users, we should remove all of the verbal communication mediums and focus on visual/vibrating notifications. To solve the problem for old versions we should send SMS stating the disability issue for the other side.",
@@ -358,16 +358,16 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Bringing ideas to life */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
               Bringing ideas to life
             </h2>
             <h3 className="text-[20px] font-['Lustria',serif] text-black mb-4">
               Driver assigned page changes
             </h3>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
               Here are the changes we made when the driver with disabilities is assigned in a ride.
               (Also an SMS will be sent to the passenger explaining the situation.)
             </p>
@@ -377,14 +377,14 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Why this solution didn't work (ride flow) */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <img src={arWhyFailed1} alt="Failed solution screenshot" className="w-[241px]" />
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Why this solution didn't work out?
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Facing a disabled call button would not give the user the reason and make them confused, (is the call down?)</li>
               <li>Users tend to not take snack-bars seriously enough, so we needed a more obvious way to keep them informed.</li>
               <li>There are occasions that the chat is disabled, like in ride allotment, or when either of the passenger or driver's app are not up to date, so disabling the call button with no chat would leave no connection route but the SMS and in case the SMS doesn't deliver it will cause problems.</li>
@@ -394,13 +394,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* What did we finally do (ride flow) */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               What did we finally do?
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Call button will stay active so we can take the benefit of informing users better and give them the number of the driver in case SMS doesn't arrive.</li>
               <li>There won't be a need for a snackbar as informing the users will happen in the bottom sheet.</li>
               <li>In case the passenger or driver app is not up to date, by tapping on the call button a voice will be played telling them that the driver has hearing impairments.</li>
@@ -411,13 +411,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Final overview - ride flow */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-50 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
               Final overview of what we did in ride flow
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               I redesigned this flow so many times because it had many different possibilities and not missing
               the corner cases was really challenging, and it should have been in a way that developers, PMs
               and QA understand it well.
@@ -428,13 +428,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Adding passengers accessibility */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Adding passengers accessibility in the app
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Here we wanted to give the passengers the ability to add their disability in the app so the drivers will be informed and the cancelation after acceptance rate decreases.</li>
               <li>Based on our data, mobility-impaired passengers had the highest rate of cancelation because of their wheelchair and the help they needed.</li>
               <li>By proving their mobility, the drivers who accept their ride won't pay any commissions and will be more willing to accept the ride.</li>
@@ -445,14 +445,14 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Why this solution didn't work (profile) */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <img src={arIllustration3} alt="Profile solution illustration" className="w-[416px]" />
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Why this solution didn't work out?
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Users consider disability as a part of their personality, so they will look for it in the profile. On the other hand, the profile is upper on the sidebar and is used by users more and finally, based on our expert review and some competitive analysis, profile was a better choice to get these data.</li>
               <li>The texts were too long and would be repetitive over some time, and handling and updating them would be technically costly.</li>
             </ul>
@@ -461,13 +461,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* What did we finally do (profile) */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               What did we finally do?
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
               <li>Based on our interviews data and expert reviews, I did a benchmark on other products with accessibility section and as a result I decided to add it as a part of user info in users profile.</li>
               <li>Mobility impairment prove and commission free rides will be postponed to phase two due to technical difficulties.</li>
               <li>I put the accessibility section after the personal info and the less important user data had been drifted down.</li>
@@ -478,10 +478,10 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Final overview - profile */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-50 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
               Final overview of what we did on profile
             </h2>
             <img src={arProfileOverview} alt="Profile overview" className="w-full rounded-lg" />
@@ -490,18 +490,18 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* The Impact */}
-      <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-50 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-4">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-4">
               The impact
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               Adding all these changes to the Android app had a positive impact on the experience of passengers,
               and drivers with disabilities; we measured our metrics after the roll-out, so far our most important
               metrics have improved:
             </p>
-            <div className="bg-black text-white rounded-lg p-10 text-left space-y-4 max-w-2xl mx-auto mb-6">
+            <div className="bg-black text-white rounded-lg p-6 md:p-10 text-left space-y-4 max-w-2xl mx-auto mb-6">
               <p className="text-[20px] font-['Lustria',serif] leading-relaxed">
                 ⬇️ Cancelation rate of rides by passengers who got drivers with disabilities decreased by 25%
               </p>
@@ -520,13 +520,13 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Reflection */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
               Reflection
             </h2>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed space-y-6">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed space-y-6">
               <li>
                 <strong className="font-bold">Accessibility is more than a contrast check!</strong>{' '}
                 Learning all about accessibility by taking courses, talking to experts in the field, giving
@@ -551,12 +551,12 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Next Steps */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-6">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-6">
             Next Steps
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
             We have so much for the future of this project; adding a section for passengers to prove their
             disability by uploading their documents and omitting the commission for drivers who accept their
             rides is the most important one of them, and for the second phase we are working on the problems
@@ -567,7 +567,7 @@ export function RideAccessibilityCaseStudy() {
       </section>
 
       {/* Back to Portfolio */}
-      <section className="container mx-auto px-6 py-12">
+      <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-5xl mx-auto text-center">
           <Link
             to="/"

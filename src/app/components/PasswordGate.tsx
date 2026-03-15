@@ -31,14 +31,14 @@ export function PasswordGate({ password, projectName, children }: PasswordGatePr
   return (
     <div className="min-h-screen bg-[#fffcfb]">
       <NavigationMinimal />
-      <div className="flex flex-col items-center justify-center min-h-screen px-8">
+      <div className="flex flex-col items-center justify-center min-h-screen px-6 md:px-8">
         <h2 className="font-['Lustria',serif] text-[13px] tracking-[0.15em] uppercase text-black/40 mb-4">
           Protected Project
         </h2>
-        <h1 className="font-['Lustria',serif] text-[32px] text-black mb-3 text-center">
+        <h1 className="font-['Lustria',serif] text-[24px] md:text-[32px] text-black mb-3 text-center">
           {projectName}
         </h1>
-        <p className="font-['Lustria',serif] text-[15px] text-black/50 mb-10 text-center max-w-[400px]">
+        <p className="font-['Lustria',serif] text-[14px] md:text-[15px] text-black/50 mb-10 text-center max-w-[400px]">
           This case study is password protected. Please enter the password to view.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 w-full max-w-[320px]">

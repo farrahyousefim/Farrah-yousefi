@@ -9,20 +9,20 @@ export function Footer() {
 
   return (
     <footer className="bg-[#fffcfb] border-t border-black/10">
-      <div className="mx-auto max-w-[1200px] px-8 py-16">
-        <div className="flex items-center justify-between">
+      <div className="mx-auto max-w-[1200px] px-6 md:px-8 py-10 md:py-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Flower mark */}
           <div className="w-[32px] h-[32px] rounded-full bg-[#943d2f] flex items-center justify-center">
             <img src={flowerMark} alt="" className="w-[18px] h-[18px] object-contain brightness-0 invert" />
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-6 md:gap-10">
             {links.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="font-['Lustria',serif] text-[13px] tracking-[0.12em] uppercase text-black/50 hover:text-black transition-colors"
+                className="font-['Lustria',serif] text-[12px] md:text-[13px] tracking-[0.12em] uppercase text-black/50 hover:text-black transition-colors"
               >
                 {link.label}
               </a>

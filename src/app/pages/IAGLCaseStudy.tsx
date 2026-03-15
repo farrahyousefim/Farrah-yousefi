@@ -17,7 +17,7 @@ export function IAGLCaseStudy() {
       <NavigationMinimal />
 
       {/* Back button */}
-      <div className="container mx-auto px-6 pt-24">
+      <div className="container mx-auto px-4 md:px-6 pt-20 md:pt-24">
         <Link to="/" className="inline-flex items-center gap-2 text-black hover:opacity-70 transition-opacity font-['Lustria',serif]">
           <ArrowLeft className="w-5 h-5" />
           Back to Portfolio
@@ -25,7 +25,7 @@ export function IAGLCaseStudy() {
       </div>
 
       {/* Cover */}
-      <section className="container mx-auto px-6 mt-8">
+      <section className="container mx-auto px-4 md:px-6 mt-8">
         <div className="max-w-5xl mx-auto">
           <img
             src={iaglCover}
@@ -36,12 +36,12 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* Project Overview */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-5xl font-['Lustria',serif] text-black mb-8">
+          <h1 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Project Overview
           </h1>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-12">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 md:mb-12">
             IAG Loyalty is the company behind Avios, the loyalty points for airlines like British Airways, Aer Lingus,
             Iberia and Vueling. Partner onboarding on Developer portal used to be a manual process taking{' '}
             <strong className="font-bold">up to 4 months</strong>, involving multiple teams, and Jira tickets. In this
@@ -50,10 +50,10 @@ export function IAGLCaseStudy() {
             <strong className="font-bold">24 hours.</strong>
           </p>
 
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">THE TEAM</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 1 designer, 4 Developers,<br />
                 1 Product manager and<br />
                 1 Delivery lead,
@@ -61,20 +61,20 @@ export function IAGLCaseStudy() {
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">TIMELINE</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Sep 2023 - Dec 2025
               </p>
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">Platform</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Responsive web<br />
                 (desktop-first)
               </p>
             </div>
             <div>
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">MY ROLE</h3>
-              <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+              <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
                 Solo designer, owner of<br />
                 the whole design process.
               </p>
@@ -84,30 +84,30 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* Got Interested */}
-      <section className="container mx-auto px-6 py-12">
+      <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[32px] font-['Lustria',serif] text-black leading-tight">
+          <h2 className="text-[24px] md:text-[32px] font-['Lustria',serif] text-black leading-tight">
             Got interested? You can read the details of what we did down here! ⬇️
           </h2>
         </div>
       </section>
 
       {/* The Problem */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-100 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
               The Problem
             </h2>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               Partner onboarding at IAG Loyalty was slow, fragmented, and frustrating.
             </p>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
               It took <strong className="font-bold">3–4 months</strong>, involved{' '}
               <strong className="font-bold">constant back-and-forth</strong> across six teams, and left Sales
               Engineering and partners equally annoyed.
             </p>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
               This blocked the business from onboarding more partners, slowed commercial growth, reduced partner
               satisfaction, and created huge operational costs.
             </p>
@@ -116,15 +116,15 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* Core Insight */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Core Insight
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
             Through weeks of mapping the real workflows (not the assumed ones), I uncovered the root issue:
           </p>
-          <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
+          <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-4">
             <li>The delays weren't caused by "complex tools" — they were caused by unclear ownership and scattered processes across Identity, Sales Engineering, Loyalty Ops, CLM, and Data.</li>
             <li>Everyone was doing the right tasks… but in the wrong order, with the wrong team owning each step.</li>
             <li>Fixing this required redesigning the entire mental model and sequence of partner onboarding.</li>
@@ -133,17 +133,17 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* What We Designed */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-12">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8 md:mb-12">
             What We Designed (and Why It Worked)
           </h2>
 
           {/* A. Automating application creation */}
-          <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+          <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
             A. Automating application creation inside PMT
           </h3>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             Previously, Sales Engineering created Jira tickets → Identity team → manual checks → back-and-forth → delays.
             We moved application creation fully into PMT, removing Identity from the critical path.
             This made the step: instant, owned, auditable, and scalable.
@@ -157,20 +157,20 @@ export function IAGLCaseStudy() {
           </div>
 
           {/* B. Enabling Sales Engineering */}
-          <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+          <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
             B. Enabling Sales Engineering to create partners directly
           </h3>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-12">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8 md:mb-12">
             Instead of dozens of Jira tickets bouncing between teams, PMT now lets Sales Engineering:
             create partners, create applications, request approval, and hand off to CLM automatically.
             This eliminated the long "waiting gap" between teams.
           </p>
 
           {/* C. Integrating PMT with CLM */}
-          <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+          <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
             C. Integrating PMT with CLM
           </h3>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             Partner creation was heavily manual in CLM.
             Now, PMT pre-fills data, reduces human error, and sends structured, validated information straight into CLM.
             Result: no more chasing people for missing info.
@@ -180,58 +180,58 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* How I Designed It */}
-      <section className="bg-gray-100 py-16">
-        <div className="container mx-auto px-6">
+      <section className="bg-gray-100 py-10 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+            <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
               How I Designed It (My Process)
             </h2>
 
-            <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+            <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
               Discovering the real flow
             </h3>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               I started by mapping every single step across all teams.
               This meant reading documentation, interviewing stakeholders, and visually mapping the real process
               (not just the official one).
             </p>
-            <img src={iaglProcessMap} alt="Pre-sales onboarding process map" className="w-full rounded-lg mb-12" />
+            <img src={iaglProcessMap} alt="Pre-sales onboarding process map" className="w-full rounded-lg mb-8 md:mb-12" />
 
-            <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+            <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
               Design principles driving every decision
             </h3>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2 mb-12">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2 mb-8 md:mb-12">
               <li><strong className="font-bold">Feasibility first</strong> — this project was deeply technical and dependent on backend constraints.</li>
               <li><strong className="font-bold">Scalability</strong> — reusable components so devs could build once and reuse everywhere.</li>
               <li><strong className="font-bold">Familiarity</strong> — mirrored the mental model Sales Engineering had built over years.</li>
               <li><strong className="font-bold">Clarity</strong> — replaced scattered language with consistent terminology across PMT, Identity, CLM.</li>
             </ul>
 
-            <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+            <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
               Designing with incomplete information
             </h3>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
               Many technical details were emerging mid-project. To keep moving, I focused on:
             </p>
-            <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2 mb-12">
+            <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-disc list-inside space-y-2 mb-8 md:mb-12">
               <li>Simple flows</li>
               <li>Safe defaults</li>
               <li>Clear guardrails</li>
               <li>Flexible UI that could absorb new requirements without redesign</li>
             </ul>
 
-            <h3 className="text-[24px] font-['Lustria',serif] text-black mb-4">
+            <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
               Validating the solution
             </h3>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
               Each major iteration went through:
             </p>
-            <ol className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-decimal list-inside space-y-2">
+            <ol className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed list-decimal list-inside space-y-2">
               <li>Internal reviews with PMT team</li>
               <li>Stakeholder validation with Identity, Sales Engineering, LOPS, CLM</li>
               <li>Live testing in Staging once devs implemented it</li>
             </ol>
-            <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mt-4">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mt-4">
               This cycle revealed gaps early, allowing the system to evolve without rework.
             </p>
           </div>
@@ -239,26 +239,26 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* Outcome & Impact */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Outcome & Impact
           </h2>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-4">
             ⏱ From 3–4 months → 24 hours
           </p>
-          <p className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
+          <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             Sales Engineering confirmed the new flow achieves this target in practice.
             (The rollout is recent, so more qualitative feedback will come as adoption grows.)
           </p>
-          <div className="bg-black text-white rounded-lg p-10 space-y-4">
-            <p className="text-[17px] font-['Lustria',serif] leading-relaxed">
+          <div className="bg-black text-white rounded-lg p-6 md:p-10 space-y-4">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] leading-relaxed">
               ⚡ <strong className="font-bold">Faster partner onboarding = more revenue potential</strong> — Sales Engineering can onboard more partners in a shorter time.
             </p>
-            <p className="text-[17px] font-['Lustria',serif] leading-relaxed">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] leading-relaxed">
               🤝 <strong className="font-bold">Higher partner satisfaction</strong> — Less waiting, fewer errors, and a smoother journey.
             </p>
-            <p className="text-[17px] font-['Lustria',serif] leading-relaxed">
+            <p className="text-[15px] md:text-[17px] font-['Lustria',serif] leading-relaxed">
               💰 <strong className="font-bold">Significant operational cost savings</strong> — Multiple teams save hours per partner; this compounds at scale.
             </p>
           </div>
@@ -266,12 +266,12 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* Reflection */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="container mx-auto px-4 md:px-6 py-10 md:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[40px] font-['Lustria',serif] text-black mb-8">
+          <h2 className="text-[28px] md:text-[40px] font-['Lustria',serif] text-black mb-8">
             Reflection
           </h2>
-          <ul className="text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed space-y-6">
+          <ul className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed space-y-6">
             <li>Turning an ambiguous, multi-team workflow into a clear end-to-end product.</li>
             <li>Letting the business unlock partner onboarding speed they didn't think was possible.</li>
             <li>Designing something both technically feasible and strategically impactful.</li>
@@ -285,7 +285,7 @@ export function IAGLCaseStudy() {
       </section>
 
       {/* Back to Portfolio */}
-      <section className="container mx-auto px-6 py-12">
+      <section className="container mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="max-w-5xl mx-auto text-center">
           <Link
             to="/"
