@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
 
+/* Simulate bold for Lustria (only has regular 400 weight) */
+.lustria-bold {
+  -webkit-text-stroke: 0.5px currentColor;
+  text-stroke: 0.5px currentColor;
+}
+
 @font-face {
   font-family: 'Lovelyn';
   src: url('../fonts/Lovelyn.ttf') format('truetype');

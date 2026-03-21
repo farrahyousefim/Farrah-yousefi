@@ -25,8 +25,8 @@ function renderInlineChildren(children: any[], markDefs: any[] = []) {
       return <a key={i} href={def?.href} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-60 transition-opacity">{text}</a>;
     }
     if (marks.includes('code')) return <code key={i} className="bg-black/5 px-1.5 py-0.5 rounded font-mono text-[13px]">{text}</code>;
-    if (marks.includes('strong') && marks.includes('em')) return <strong key={i}><em>{text}</em></strong>;
-    if (marks.includes('strong')) return <strong key={i} className="font-bold">{text}</strong>;
+    if (marks.includes('strong') && marks.includes('em')) return <strong key={i} className="lustria-bold"><em>{text}</em></strong>;
+    if (marks.includes('strong')) return <strong key={i} className="lustria-bold">{text}</strong>;
     if (marks.includes('em')) return <em key={i}>{text}</em>;
     if (marks.includes('underline')) return <u key={i}>{text}</u>;
     return <span key={i}>{text}</span>;
