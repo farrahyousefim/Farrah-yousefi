@@ -14,65 +14,101 @@ interface SanityPost {
   content?: any[];
 }
 
+function renderInlineChildren(children: any[], markDefs: any[] = []) {
+  return children?.map((child: any, i: number) => {
+    const marks = child.marks || [];
+    const text = child.text;
+
+    const linkKey = marks.find((m: string) => markDefs.some((d: any) => d._key === m && d._type === 'link'));
+    if (linkKey) {
+      const def = markDefs.find((d: any) => d._key === linkKey);
+      return <a key={i} href={def?.href} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-60 transition-opacity">{text}</a>;
+    }
+    if (marks.includes('code')) return <code key={i} className="bg-black/5 px-1.5 py-0.5 rounded font-mono text-[13px]">{text}</code>;
+    if (marks.includes('strong') && marks.includes('em')) return <strong key={i}><em>{text}</em></strong>;
+    if (marks.includes('strong')) return <strong key={i} className="font-bold">{text}</strong>;
+    if (marks.includes('em')) return <em key={i}>{text}</em>;
+    if (marks.includes('underline')) return <u key={i}>{text}</u>;
+    return <span key={i}>{text}</span>;
+  });
+}
+
 function SanityContent({ blocks }: { blocks: any[] }) {
+  // Group consecutive list items together
+  const groups: { type: string; items: any[] }[] = [];
+  blocks.forEach((block) => {
+    if (block._type === 'block' && block.listItem) {
+      const last = groups[groups.length - 1];
+      if (last && last.type === `list-${block.listItem}`) {
+        last.items.push(block);
+      } else {
+        groups.push({ type: `list-${block.listItem}`, items: [block] });
+      }
+    } else {
+      groups.push({ type: block._type === 'image' ? 'image' : 'block', items: [block] });
+    }
+  });
+
   return (
     <>
-      {blocks.map((block, index) => {
+      {groups.map((group, gi) => {
+        if (group.type === 'list-bullet') {
+          return (
+            <ul key={gi} className="list-disc pl-6 mb-6 md:mb-8 space-y-2">
+              {group.items.map((item, ii) => (
+                <li key={ii} className="font-['Lustria',serif] text-[15px] md:text-[17px] text-black/80 leading-[1.9]">
+                  {renderInlineChildren(item.children, item.markDefs)}
+                </li>
+              ))}
+            </ul>
+          );
+        }
+        if (group.type === 'list-number') {
+          return (
+            <ol key={gi} className="list-decimal pl-6 mb-6 md:mb-8 space-y-2">
+              {group.items.map((item, ii) => (
+                <li key={ii} className="font-['Lustria',serif] text-[15px] md:text-[17px] text-black/80 leading-[1.9]">
+                  {renderInlineChildren(item.children, item.markDefs)}
+                </li>
+              ))}
+            </ol>
+          );
+        }
+
+        const block = group.items[0];
+
         if (block._type === 'image') {
           return (
-            <figure key={index} className="my-8 md:my-12">
-              <img
-                src={urlFor(block).width(1200).url()}
-                alt={block.caption || ''}
-                className="w-full h-auto"
-              />
+            <figure key={gi} className="my-8 md:my-12">
+              <img src={urlFor(block).width(1200).url()} alt={block.caption || ''} className="w-full h-auto" />
               {block.caption && (
-                <figcaption className="font-['Lustria',serif] text-[13px] text-black/40 mt-3 text-center">
-                  {block.caption}
-                </figcaption>
+                <figcaption className="font-['Lustria',serif] text-[13px] text-black/40 mt-3 text-center">{block.caption}</figcaption>
               )}
             </figure>
           );
         }
 
         if (block._type === 'block') {
-          const text = block.children?.map((c: any) => c.text).join('') || '';
-
-          if (block.style === 'h2') {
-            return (
-              <h2 key={index} className="font-['Lustria',serif] text-[20px] md:text-[24px] text-black leading-[1.3] mt-8 md:mt-12 mb-4 md:mb-6">
-                {text}
-              </h2>
-            );
-          }
-          if (block.style === 'h3') {
-            return (
-              <h3 key={index} className="font-['Lustria',serif] text-[18px] md:text-[20px] text-black leading-[1.3] mt-6 md:mt-10 mb-3 md:mb-4">
-                {text}
-              </h3>
-            );
-          }
-          if (block.style === 'blockquote') {
-            return (
-              <blockquote key={index} className="border-l-2 border-black/15 pl-6 md:pl-8 my-8 md:my-10">
-                <p className="font-['Lustria',serif] text-[17px] md:text-[20px] text-black/60 italic leading-[1.6]">
-                  {text}
-                </p>
-              </blockquote>
-            );
-          }
-
+          if (block.style === 'h2') return (
+            <h2 key={gi} className="font-['Lustria',serif] text-[20px] md:text-[24px] text-black leading-[1.3] mt-8 md:mt-12 mb-4 md:mb-6">
+              {renderInlineChildren(block.children, block.markDefs)}
+            </h2>
+          );
+          if (block.style === 'h3') return (
+            <h3 key={gi} className="font-['Lustria',serif] text-[18px] md:text-[20px] text-black leading-[1.3] mt-6 md:mt-10 mb-3 md:mb-4">
+              {renderInlineChildren(block.children, block.markDefs)}
+            </h3>
+          );
+          if (block.style === 'blockquote') return (
+            <blockquote key={gi} className="border-l-2 border-black/15 pl-6 md:pl-8 my-8 md:my-10">
+              <p className="font-['Lustria',serif] text-[17px] md:text-[20px] text-black/60 italic leading-[1.6]">
+                {renderInlineChildren(block.children, block.markDefs)}
+              </p>
+            </blockquote>
+          );
           return (
-            <p key={index} className="font-['Lustria',serif] text-[15px] md:text-[17px] text-black/80 leading-[1.9] mb-6 md:mb-8">
-              {block.children?.map((child: any, i: number) => {
-                if (child.marks?.includes('strong')) {
-                  return <strong key={i} className="font-bold">{child.text}</strong>;
-                }
-                if (child.marks?.includes('em')) {
-                  return <em key={i}>{child.text}</em>;
-                }
-                return child.text;
-              })}
+            <p key={gi} className="font-['Lustria',serif] text-[15px] md:text-[17px] text-black/80 leading-[1.9] mb-6 md:mb-8">
+              {renderInlineChildren(block.children, block.markDefs)}
             </p>
           );
         }
