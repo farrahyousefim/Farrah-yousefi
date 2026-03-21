@@ -181,11 +181,11 @@ export function BlogPost() {
           )}
         </div>
 
-        <div className="mx-auto max-w-[600px] px-6 md:px-8">
+        <div className="mx-auto max-w-[680px] px-6 md:px-8">
           <div className="h-[0.5px] bg-black/15 mb-8 md:mb-12" />
         </div>
 
-        <div className="mx-auto max-w-[600px] px-6 md:px-8 pb-16 md:pb-20">
+        <div className="mx-auto max-w-[680px] px-6 md:px-8 pb-16 md:pb-20">
           {localPost.content.map((block, index) => {
             if (block.type === 'text') return <p key={index} className="font-['Lustria',serif] text-[15px] md:text-[17px] text-black/80 leading-[1.9] mb-6 md:mb-8">{block.value}</p>;
             if (block.type === 'heading') return <h2 key={index} className="font-['Lustria',serif] text-[20px] md:text-[24px] text-black leading-[1.3] mt-8 md:mt-12 mb-4 md:mb-6">{block.value}</h2>;
@@ -204,7 +204,7 @@ export function BlogPost() {
           })}
         </div>
 
-        <div className="mx-auto max-w-[600px] px-6 md:px-8 pb-16 md:pb-20 text-center">
+        <div className="mx-auto max-w-[680px] px-6 md:px-8 pb-16 md:pb-20 text-center">
           <Link to="/blog" className="inline-flex items-center gap-2 text-black/40 hover:text-black transition-colors font-['Lustria',serif] text-[13px] tracking-[0.1em] uppercase">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
           </Link>
@@ -242,15 +242,15 @@ export function BlogPost() {
         )}
       </div>
 
-      <div className="mx-auto max-w-[600px] px-6 md:px-8">
+      <div className="mx-auto max-w-[680px] px-6 md:px-8">
         <div className="h-[0.5px] bg-black/15 mb-8 md:mb-12" />
       </div>
 
-      <div className="mx-auto max-w-[600px] px-6 md:px-8 pb-16 md:pb-20">
+      <div className="mx-auto max-w-[680px] px-6 md:px-8 pb-16 md:pb-20">
         {sanityPost.content && <SanityContent blocks={sanityPost.content} />}
       </div>
 
-      <div className="mx-auto max-w-[600px] px-6 md:px-8 pb-16 md:pb-20 text-center">
+      <div className="mx-auto max-w-[680px] px-6 md:px-8 pb-16 md:pb-20 text-center">
         <Link to="/blog" className="inline-flex items-center gap-2 text-black/40 hover:text-black transition-colors font-['Lustria',serif] text-[13px] tracking-[0.1em] uppercase">
           <ArrowLeft className="w-4 h-4" /> Back to Blog
         </Link>
