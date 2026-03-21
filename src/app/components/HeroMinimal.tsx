@@ -23,7 +23,7 @@ export function HeroMinimal() {
           transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
           className="font-['Lustria',serif] text-[22px] md:text-[38px] text-black leading-[1.15] text-center max-w-[900px] mx-auto mb-6 md:mb-8"
         >
-          Product designer. Researcher. Strategist: The one who brings clarity to chaos and good energy to every room.
+          Product designer. Researcher. Strategist. The one who brings clarity to chaos and good energy to the room.
         </motion.p>
 
         {/* Portrait — centered, contained */}
