@@ -207,7 +207,7 @@ export function IAGLCaseStudy() {
               This was by far the hardest design challenge. Partner info was split across PMT's own database, CLM, Partner Hub (another legacy system), and SAP. Each system had different naming conventions. Partner types (Award, Redemption, Opco) each had different rules. And the integration had to happen in phases — we started with Award partners in staging only, while the design needed to already account for the full future state.
             </p>
             <img src={iaglClmIntegration} alt="Domain modeling session — mapping the partner and application setup journey" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">Domain modeling session (Feb 4th) — mapping the partner setup and application setup journeys</p>
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">Partner creation integration with CLM</p>
             <img src={workshops} alt="London workshops and on-site visits with IAGL teams" className="w-full rounded-lg mb-3" />
             <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">London workshops — on-site sessions with IAGL teams</p>
 
