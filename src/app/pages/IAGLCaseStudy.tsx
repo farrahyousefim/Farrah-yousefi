@@ -2,10 +2,12 @@ import { NavigationMinimal } from '@/app/components/NavigationMinimal';
 import { PasswordGate } from '@/app/components/PasswordGate';
 import { Link } from 'react-router';
 import { ArrowLeft } from 'lucide-react';
-import iaglCover from '@/assets/Hero image_ PMT partner detail page showing applications with statuses, inside a browser mockup (1).png';
+import iaglCover from '@/assets/Hero image_ PMT partner detail page showing applications with statuses, inside a browser mockup (3).png';
 import iaglAppsIter4 from '@/assets/iagl-apps-iter4.png';
 import iaglClmIntegration from '@/assets/iagl-clm-integration.png';
 import iaglProcessMap from '@/assets/iagl-process-map.png';
+import oldDevPortal from '@/assets/Old dev portal.png';
+import newDevPortalHomepage from '@/assets/New Developer Portal homepage.png';
 
 function ImagePlaceholder({ label }: { label: string }) {
   return (
@@ -60,7 +62,7 @@ export function IAGLCaseStudy() {
             <div>
               <h3 className="text-[12px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">Team</h3>
               <p className="text-[15px] font-['Lustria',serif] text-gray-700 leading-relaxed">
-                4 developers, 1 PM, 1 delivery lead
+                Started as 4 devs, 1 PM, 1 delivery lead — grew to 5 devs, 1 BA, 1 PM, 1 designer
               </p>
             </div>
             <div>
@@ -95,7 +97,10 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
               They first came to us because the Developer Portal looked outdated and had accessibility issues. We cleaned it up. But in our conversations the real problem surfaced: the onboarding process itself was broken.
             </p>
-            <ImagePlaceholder label="Old Developer Portal — the 'before'" />
+            <img src={oldDevPortal} alt="Old Developer Portal — the before state" className="w-full rounded-lg my-8" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 -mt-5 mb-8 text-center italic">The old Developer Portal — before the redesign</p>
+            <img src={newDevPortalHomepage} alt="New Developer Portal homepage" className="w-full rounded-lg my-8" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 -mt-5 mb-2 text-center italic">The new Developer Portal homepage — after the redesign</p>
           </div>
         </div>
       </section>
@@ -128,6 +133,8 @@ export function IAGLCaseStudy() {
               We created <strong className="lustria-bold">PMT (Partner Management Tool)</strong> — a brand new internal platform that centralised the onboarding data and automated the manual handoffs. We also redesigned the Developer Portal for partners. The idea: put Sales Engineering in the driver's seat. Instead of filing Jira tickets and waiting for other teams, they could now handle most of the process themselves.
             </p>
 
+            <ImagePlaceholder label="PMT partners overview table — the centralised partner directory that replaced scattered Jira tickets" />
+
             {/* A */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
               A. Application Creation
@@ -141,9 +148,11 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               The tricky part was convincing Identity team to let go. They were initially skeptical and wanted to stay as gatekeepers. After seeing how the system worked — with proper audit logs and guardrails — they trusted the process enough to step back. We even simplified the approval from a two-step flow (SE peer review → Identity approval) down to a single step once we saw the extra layer was slowing things down without adding real safety.
             </p>
+            <ImagePlaceholder label="PMT: Create application form — the form that replaced the Jira ticket workflow" />
+            <ImagePlaceholder label="PMT: Application detail view — 'Approved (Live)' status, environment (STG), properties and scopes" />
             <img src={iaglAppsIter4} alt="PMT: Partner detail page with applications table showing STG/PRD environments" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">PMT partner detail page — applications with staging/production environments, statuses, and actions</p>
-            <ImagePlaceholder label="PMT: Application detail view with 'Approved (Live)' status, scopes, and properties" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">The Aer Lingus partner page — applications table with STG/PRD environments, statuses, visibility toggles, and actions</p>
+            <ImagePlaceholder label="PMT: Approval flow UI — the simplified single-step approval (Approve / Request Changes)" />
 
             {/* B */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4 mt-10">
@@ -158,9 +167,12 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               This was by far the hardest design challenge. Partner info was split across PMT's own database, CLM, Partner Hub (another legacy system), and SAP. Each system had different naming conventions. Partner types (Award, Redemption, Opco) each had different rules. And the integration had to happen in phases — we started with Award partners in staging only, while the design needed to already account for the full future state.
             </p>
-            <ImagePlaceholder label="PMT: Partner profile page with side navigation — General Info, Partnerhub ID, Award, Redemption sections" />
+            <ImagePlaceholder label="PMT: Partner profile page with side navigation — General Info, Partnerhub ID, Award, Redemption sections (multi-step partner structure from CLM integration)" />
+            <ImagePlaceholder label="PMT: Promoter codes table or creation flow inside a partner — a major piece involving multiple teams" />
             <img src={iaglClmIntegration} alt="Domain modeling session — mapping the partner and application setup journey" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">Domain modeling session — mapping the partner setup and application setup journeys</p>
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">Domain modeling session (Feb 4th) — mapping the partner setup and application setup journeys</p>
+            <ImagePlaceholder label="New NAP Partner Onboarding Process (2025) flow diagram — place next to old flow to show how the process was streamlined" />
+            <ImagePlaceholder label="Workshop photos — London workshops, whiteboard sessions, or on-site visits with IAGL teams" />
 
             {/* C */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4 mt-10">
@@ -169,7 +181,8 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               In parallel, we gave the Developer Portal a complete redesign — better navigation, documentation, customer journeys, and self-service features so partners could manage more on their own.
             </p>
-            <ImagePlaceholder label="New Developer Portal homepage — dark themed design with 'Build excellent loyalty experiences'" />
+            <ImagePlaceholder label="New Developer Portal — inner page (documentation, customer journeys, or any page showing the redesign went deeper than the homepage)" />
+            <ImagePlaceholder label="New Developer Portal — Get Started / self-service feature (e.g. documentation explorer)" />
           </div>
         </div>
       </section>
@@ -223,6 +236,9 @@ export function IAGLCaseStudy() {
               </p>
             </div>
           </div>
+
+          <ImagePlaceholder label="Design iterations — collage or side-by-side of how a key screen evolved (e.g. partner creation from single form to multi-step CLM-integrated version)" />
+          <ImagePlaceholder label="Figma Make prototype screenshot — supports the point about it being a game changer for testing" />
         </div>
       </section>
 
