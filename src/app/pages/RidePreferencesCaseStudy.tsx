@@ -103,7 +103,7 @@ export function RidePreferencesCaseStudy() {
               Problem statement
             </h2>
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-6">
-              Around *% of social reports issues in each month were about ride preferences.
+              Around 30% of social reports issues in each month were about ride preferences.
               Subjects like music in the car, carrying luggage, wheelchair, transporting pets, smoking etc.{' '}
               <strong className="font-bold">How might we let users add some personalized changes to their ride?</strong>
             </p>
@@ -139,7 +139,7 @@ export function RidePreferencesCaseStudy() {
               This project was mainly about enhancing the in-app experience for our users and adding
               a sense of <strong className="font-bold">coolness</strong> and{' '}
               <strong className="font-bold">luxury</strong> to our app. But how can we know if we have
-              reached our goal if we can't measure it?
+              reached our goal if we can't measure it? (I did not add exact numbers as they are confidential)
             </p>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-[13px] font-['Lustria',serif] text-black mb-3 uppercase tracking-wider">
