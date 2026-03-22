@@ -139,10 +139,6 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
               They first came to us because the Developer Portal looked outdated and had accessibility issues. We cleaned it up. But in our conversations the real problem surfaced: the onboarding process itself was broken.
             </p>
-            <ImageCarousel slides={[
-              { src: oldDevPortal, alt: 'Old Developer Portal', caption: 'Before — the old Developer Portal' },
-              { src: newDevPortalHomepage, alt: 'New Developer Portal homepage', caption: 'After — the redesigned Developer Portal' },
-            ]} />
           </div>
         </div>
       </section>
@@ -223,8 +219,10 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               In parallel, we gave the Developer Portal a complete redesign — better navigation, documentation, customer journeys, and self-service features so partners could manage more on their own.
             </p>
-            <ImagePlaceholder label="New Developer Portal — inner page (documentation, customer journeys, or any page showing the redesign went deeper than the homepage)" />
-            <ImagePlaceholder label="New Developer Portal — Get Started / self-service feature (e.g. documentation explorer)" />
+            <ImageCarousel slides={[
+              { src: oldDevPortal, alt: 'Old Developer Portal', caption: 'Before — the old Developer Portal' },
+              { src: newDevPortalHomepage, alt: 'New Developer Portal homepage', caption: 'After — the redesigned Developer Portal' },
+            ]} />
           </div>
         </div>
       </section>
