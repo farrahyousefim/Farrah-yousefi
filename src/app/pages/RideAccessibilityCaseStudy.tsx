@@ -93,28 +93,28 @@ export function RideAccessibilityCaseStudy() {
           </h2>
           <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
             We wanted to help all Snapp users with disability to use Snapp easier, first we checked the context
-            of our current situation: (Because of NDA numbers can't be shown)
+            of our current situation: (Because of NDA numbers are not the acutal ones))
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                *$3 of total hearing impaired drivers had at least one ride in May 2022.
+                376 of total hearing impaired drivers had at least one ride in May 2022.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                Passengers with disabilities with wheelchair, have a #*% cancelation rate.
+                Passengers with disabilities with wheelchair, have a 35% cancelation rate.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                In Snapp there are ^&* mobility impaired drivers and @&8 hearing impaired ones.
+                In Snapp there are 8383 mobility impaired drivers and 642 hearing impaired ones.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                From *7&% rides of hearing impaired passengers, cancelation rate is ^*%.
+                From 2090 rides of hearing impaired passengers, cancelation rate is  15%.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
@@ -124,12 +124,12 @@ export function RideAccessibilityCaseStudy() {
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                %&* of rides in May 2022 had been done by mobility impairment drivers.
+                12436 of rides in May 2022 had been done by mobility impairment drivers.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                &^@ of rides in May 2022 had been done by hearing impaired users.
+                2241 of rides in May 2022 had been done by hearing impaired users.
               </p>
             </div>
           </div>
