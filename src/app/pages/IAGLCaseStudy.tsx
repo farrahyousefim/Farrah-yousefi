@@ -295,7 +295,6 @@ export function IAGLCaseStudy() {
               <strong className="lustria-bold">Mean Time to Configure dropped from 67 days to 8 working days</strong> — confirmed by Sales Engineering's own tracking. Our north star target is 24 hours for technical onboarding (contract signing to staging credentials), which is now achievable for straightforward partners.
             </p>
 
-            <ImagePlaceholder label="Slack screenshot: 'Our Mean Time To Configure prior to automation is sitting at 67 days, however, since Operational Efficiency, we are down to 8 working days!!'" />
 
             <div className="bg-black text-white rounded-lg p-6 md:p-10 space-y-5 mt-8">
               <p className="text-[15px] md:text-[17px] font-['Lustria',serif] leading-relaxed">
