@@ -10,6 +10,7 @@ import iaglProcessMap from '@/assets/iagl-process-map.png';
 import oldDevPortal from '@/assets/Old dev portal.png';
 import newDevPortalHomepage from '@/assets/New Developer Portal homepage.png';
 import pmtPartnersOverview from '@/assets/PMT partners overview table.png';
+import workshops from '@/assets/workshops.png';
 import applicationApproval from '@/assets/Application approval.png';
 import applicationPage from '@/assets/Application page.png';
 import partnerPage from '@/assets/Partner page.png';
@@ -214,7 +215,8 @@ export function IAGLCaseStudy() {
             <img src={iaglClmIntegration} alt="Domain modeling session — mapping the partner and application setup journey" className="w-full rounded-lg mb-3" />
             <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">Domain modeling session (Feb 4th) — mapping the partner setup and application setup journeys</p>
             <ImagePlaceholder label="New NAP Partner Onboarding Process (2025) flow diagram — place next to old flow to show how the process was streamlined" />
-            <ImagePlaceholder label="Workshop photos — London workshops, whiteboard sessions, or on-site visits with IAGL teams" />
+            <img src={workshops} alt="London workshops and on-site visits with IAGL teams" className="w-full rounded-lg mb-3" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">London workshops — on-site sessions with IAGL teams</p>
 
             {/* C */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4 mt-10">
