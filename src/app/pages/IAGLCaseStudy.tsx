@@ -9,6 +9,9 @@ import iaglProcessMap from '@/assets/iagl-process-map.png';
 import oldDevPortal from '@/assets/Old dev portal.png';
 import newDevPortalHomepage from '@/assets/New Developer Portal homepage.png';
 import pmtPartnersOverview from '@/assets/PMT partners overview table.png';
+import applicationApproval from '@/assets/Application approval.png';
+import applicationPage from '@/assets/Application page.png';
+import partnerPage from '@/assets/Partner page.png';
 
 function ImagePlaceholder({ label }: { label: string }) {
   return (
@@ -150,11 +153,12 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               The tricky part was convincing Identity team to let go. They were initially skeptical and wanted to stay as gatekeepers. After seeing how the system worked — with proper audit logs and guardrails — they trusted the process enough to step back. We even simplified the approval from a two-step flow (SE peer review → Identity approval) down to a single step once we saw the extra layer was slowing things down without adding real safety.
             </p>
-            <ImagePlaceholder label="PMT: Create application form — the form that replaced the Jira ticket workflow" />
-            <ImagePlaceholder label="PMT: Application detail view — 'Approved (Live)' status, environment (STG), properties and scopes" />
-            <img src={iaglAppsIter4} alt="PMT: Partner detail page with applications table showing STG/PRD environments" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">The Aer Lingus partner page — applications table with STG/PRD environments, statuses, visibility toggles, and actions</p>
-            <ImagePlaceholder label="PMT: Approval flow UI — the simplified single-step approval (Approve / Request Changes)" />
+            <img src={applicationPage} alt="PMT: Application page" className="w-full rounded-lg mb-3" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">PMT: Application page — replaced the Jira ticket workflow</p>
+            <img src={partnerPage} alt="PMT: Partner page" className="w-full rounded-lg mb-3" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">The partner page — applications table with STG/PRD environments, statuses, visibility toggles, and actions</p>
+            <img src={applicationApproval} alt="PMT: Application approval flow" className="w-full rounded-lg mb-3" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">PMT: Approval flow — the simplified single-step approval</p>
 
             {/* B */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4 mt-10">
