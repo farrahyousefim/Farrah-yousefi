@@ -119,7 +119,7 @@ export function RideAccessibilityCaseStudy() {
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <p className="text-[16px] font-['Lustria',serif] text-gray-700">
-                *^% of our total mobility impairment drivers had at least one ride in May 2022.
+                3195 of our total mobility impairment drivers had at least one ride in May 2022.
               </p>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
