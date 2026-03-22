@@ -138,10 +138,10 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed">
               They first came to us because the Developer Portal looked outdated and had accessibility issues. We cleaned it up. But in our conversations the real problem surfaced: the onboarding process itself was broken.
             </p>
-            <img src={oldDevPortal} alt="Old Developer Portal — the before state" className="w-full rounded-lg my-8" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 -mt-5 mb-8 text-center italic">The old Developer Portal — before the redesign</p>
-            <img src={newDevPortalHomepage} alt="New Developer Portal homepage" className="w-full rounded-lg my-8" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 -mt-5 mb-2 text-center italic">The new Developer Portal homepage — after the redesign</p>
+            <ImageCarousel slides={[
+              { src: oldDevPortal, alt: 'Old Developer Portal', caption: 'Before — the old Developer Portal' },
+              { src: newDevPortalHomepage, alt: 'New Developer Portal homepage', caption: 'After — the redesigned Developer Portal' },
+            ]} />
           </div>
         </div>
       </section>
