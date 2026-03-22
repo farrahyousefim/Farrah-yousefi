@@ -8,6 +8,7 @@ import iaglClmIntegration from '@/assets/iagl-clm-integration.png';
 import iaglProcessMap from '@/assets/iagl-process-map.png';
 import oldDevPortal from '@/assets/Old dev portal.png';
 import newDevPortalHomepage from '@/assets/New Developer Portal homepage.png';
+import pmtPartnersOverview from '@/assets/PMT partners overview table.png';
 
 function ImagePlaceholder({ label }: { label: string }) {
   return (
@@ -133,7 +134,8 @@ export function IAGLCaseStudy() {
               We created <strong className="lustria-bold">PMT (Partner Management Tool)</strong> — a brand new internal platform that centralised the onboarding data and automated the manual handoffs. We also redesigned the Developer Portal for partners. The idea: put Sales Engineering in the driver's seat. Instead of filing Jira tickets and waiting for other teams, they could now handle most of the process themselves.
             </p>
 
-            <ImagePlaceholder label="PMT partners overview table — the centralised partner directory that replaced scattered Jira tickets" />
+            <img src={pmtPartnersOverview} alt="PMT partners overview table" className="w-full rounded-lg my-8" />
+            <p className="text-[13px] font-['Lustria',serif] text-gray-400 -mt-5 mb-8 text-center italic">PMT partners overview — the centralised partner directory that replaced scattered Jira tickets</p>
 
             {/* A */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4">
