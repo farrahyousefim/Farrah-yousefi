@@ -276,8 +276,6 @@ export function IAGLCaseStudy() {
             </div>
           </div>
 
-          <ImagePlaceholder label="Design iterations — collage or side-by-side of how a key screen evolved (e.g. partner creation from single form to multi-step CLM-integrated version)" />
-          <ImagePlaceholder label="Figma Make prototype screenshot — supports the point about it being a game changer for testing" />
         </div>
       </section>
 
