@@ -2,7 +2,7 @@ import { NavigationMinimal } from '@/app/components/NavigationMinimal';
 import { PasswordGate } from '@/app/components/PasswordGate';
 import { Link } from 'react-router';
 import { ArrowLeft } from 'lucide-react';
-import iaglCover from '@/assets/Hero image_ PMT partner detail page showing applications with statuses, inside a browser mockup.png';
+import iaglCover from '@/assets/Hero image_ PMT partner detail page showing applications with statuses, inside a browser mockup (1).png';
 import iaglAppsIter4 from '@/assets/iagl-apps-iter4.png';
 import iaglClmIntegration from '@/assets/iagl-clm-integration.png';
 import iaglProcessMap from '@/assets/iagl-process-map.png';
