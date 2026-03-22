@@ -208,7 +208,6 @@ export function IAGLCaseStudy() {
             </p>
             <img src={iaglClmIntegration} alt="Domain modeling session — mapping the partner and application setup journey" className="w-full rounded-lg mb-3" />
             <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">Domain modeling session (Feb 4th) — mapping the partner setup and application setup journeys</p>
-            <ImagePlaceholder label="New NAP Partner Onboarding Process (2025) flow diagram — place next to old flow to show how the process was streamlined" />
             <img src={workshops} alt="London workshops and on-site visits with IAGL teams" className="w-full rounded-lg mb-3" />
             <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">London workshops — on-site sessions with IAGL teams</p>
 
