@@ -1,7 +1,8 @@
 import { NavigationMinimal } from '@/app/components/NavigationMinimal';
 import { PasswordGate } from '@/app/components/PasswordGate';
 import { Link } from 'react-router';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, useEffect, useCallback } from 'react';
 import iaglCover from '@/assets/Hero image_ PMT partner detail page showing applications with statuses, inside a browser mockup (3).png';
 import iaglAppsIter4 from '@/assets/iagl-apps-iter4.png';
 import iaglClmIntegration from '@/assets/iagl-clm-integration.png';
@@ -12,6 +13,42 @@ import pmtPartnersOverview from '@/assets/PMT partners overview table.png';
 import applicationApproval from '@/assets/Application approval.png';
 import applicationPage from '@/assets/Application page.png';
 import partnerPage from '@/assets/Partner page.png';
+
+function ImageCarousel({ slides }: { slides: { src: string; alt: string; caption: string }[] }) {
+  const [current, setCurrent] = useState(0);
+
+  const prev = useCallback(() => setCurrent(i => (i - 1 + slides.length) % slides.length), [slides.length]);
+  const next = useCallback(() => setCurrent(i => (i + 1) % slides.length), [slides.length]);
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [prev, next]);
+
+  return (
+    <div className="my-8">
+      <div className="relative rounded-lg overflow-hidden bg-gray-50">
+        <img src={slides[current].src} alt={slides[current].alt} className="w-full h-auto" />
+        <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow transition">
+          <ChevronLeft className="w-5 h-5 text-black" />
+        </button>
+        <button onClick={next} className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow transition">
+          <ChevronRight className="w-5 h-5 text-black" />
+        </button>
+      </div>
+      <p className="text-[13px] font-['Lustria',serif] text-gray-400 mt-3 mb-2 text-center italic">{slides[current].caption}</p>
+      <div className="flex justify-center gap-2 mt-1">
+        {slides.map((_, i) => (
+          <button key={i} onClick={() => setCurrent(i)} className={`w-1.5 h-1.5 rounded-full transition-colors ${i === current ? 'bg-black' : 'bg-gray-300'}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function ImagePlaceholder({ label }: { label: string }) {
   return (
@@ -153,12 +190,11 @@ export function IAGLCaseStudy() {
             <p className="text-[15px] md:text-[17px] font-['Lustria',serif] text-gray-700 leading-relaxed mb-8">
               The tricky part was convincing Identity team to let go. They were initially skeptical and wanted to stay as gatekeepers. After seeing how the system worked — with proper audit logs and guardrails — they trusted the process enough to step back. We even simplified the approval from a two-step flow (SE peer review → Identity approval) down to a single step once we saw the extra layer was slowing things down without adding real safety.
             </p>
-            <img src={applicationPage} alt="PMT: Application page" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">PMT: Application page — replaced the Jira ticket workflow</p>
-            <img src={partnerPage} alt="PMT: Partner page" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">The partner page — applications table with STG/PRD environments, statuses, visibility toggles, and actions</p>
-            <img src={applicationApproval} alt="PMT: Application approval flow" className="w-full rounded-lg mb-3" />
-            <p className="text-[13px] font-['Lustria',serif] text-gray-400 mb-8 text-center italic">PMT: Approval flow — the simplified single-step approval</p>
+            <ImageCarousel slides={[
+              { src: applicationPage, alt: 'PMT: Application page', caption: 'Application page — replaced the Jira ticket workflow' },
+              { src: partnerPage, alt: 'PMT: Partner page', caption: 'Partner page — applications table with STG/PRD environments, statuses and actions' },
+              { src: applicationApproval, alt: 'PMT: Application approval flow', caption: 'Approval flow — the simplified single-step approval' },
+            ]} />
 
             {/* B */}
             <h3 className="text-[20px] md:text-[24px] font-['Lustria',serif] text-black mb-4 mt-10">
